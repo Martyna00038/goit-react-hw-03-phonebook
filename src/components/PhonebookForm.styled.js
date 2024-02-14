@@ -23,15 +23,15 @@ export const ContactAddButton = styled.button`
   height: 30px;
   border-radius: 6px;
   border-width: 0px;
-  background-color: #ff6200;
+  background-color: #da70d6;
   color: white;
   font-size: 15px;
 
   &:hover {
-    background-color: #ff8800;
+    background-color: #ee82ee;
   }
 
   &:active {
-    background-color: #ff9900;
+    background-color: #dda0dd;
   }
 `;
