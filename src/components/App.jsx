@@ -4,7 +4,7 @@ import PhonebookForm from './PhonebookForm';
 import Filter from './Filter';
 import ContactList from './ContactList';
 
-import { AppContainer, AppWrapper } from './AppStyles';
+import { AppContainer, AppWrapper } from './App.styled';
 
 export default class App extends Component {
   state = {

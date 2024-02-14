@@ -5,7 +5,7 @@ import {
   ContactListItemName,
   ContactListItemTel,
   ContactListItemRemoveBtn,
-} from './ContactListItemStyles';
+} from './ContactListItem.styled';
 
 const ContactListItem = ({ name, tel, id, onDeleteContact }) => {
   return (

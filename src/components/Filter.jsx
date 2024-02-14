@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { FilterLabel, FilterInput } from './FilterStyles';
+import { FilterLabel, FilterInput } from './Filter.styled';
 
 const Filter = ({ value, onChange }) => {
   return (

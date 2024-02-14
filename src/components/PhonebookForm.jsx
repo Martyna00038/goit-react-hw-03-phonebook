@@ -6,7 +6,7 @@ import {
   ContactFormLabel,
   ContactFormInput,
   ContactAddButton,
-} from './PhonebookFormStyles';
+} from './PhonebookForm.styled';
 
 export default class ContactForm extends Component {
   state = {
