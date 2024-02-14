@@ -23,10 +23,6 @@ export const ContactListItemRemoveBtn = styled.button`
   margin-left: 10px;
 
   &:hover {
-    background-color: #ff8800;
-  }
-
-  &:active {
-    background-color: #ff9900;
+    background-color: #8b0000;
   }
 `;
