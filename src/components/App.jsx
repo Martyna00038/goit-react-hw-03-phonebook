@@ -58,9 +58,30 @@ export default class App extends Component {
     this.loadContacts();
   }
 
-  componentDidUpdate() {
-    this.saveContacts();
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      JSON.stringify(prevState.contacts) !== JSON.stringify(this.state.contacts)
+    ) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
   }
+  addContact = ({ name, number }) => {
+    const newContact = {
+      id: nanoid(),
+      name,
+      number,
+    };
+
+    const isContactExist = this.state.contacts.some(contact => contact.name);
+
+    if (isContactExist) {
+      alert(`${name} is already in contacts.`);
+    } else {
+      this.setState(prevState => ({
+        contacts: [...prevState.contacts, newContact],
+      }));
+    }
+  };
 
   render() {
     const { filter } = this.state;
